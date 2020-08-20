@@ -298,11 +298,22 @@ export class ZKERC20 extends SmartContract {
     return result[0].toBigInt();
   }
 
+<<<<<<< HEAD
   noteAccess(param0: Bytes): BigInt {
     let result = super.call("noteAccess", [
       EthereumValue.fromFixedBytes(param0)
     ]);
     return result[0].toBigInt();
+=======
+  DIVIDEND_PROOF(): i32 {
+    let result = super.call("DIVIDEND_PROOF", []);
+    return result[0].toI32();
+  }
+
+  MINT_PROOF(): i32 {
+    let result = super.call("MINT_PROOF", []);
+    return result[0].toI32();
+>>>>>>> 59f7f91... refactor: integration with our existing contracts
   }
 
   signatureLog(param0: Bytes): boolean {

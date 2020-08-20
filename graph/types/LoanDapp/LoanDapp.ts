@@ -263,9 +263,20 @@ export class LoanDapp extends SmartContract {
     return result[0].toI32();
   }
 
+<<<<<<< HEAD
   loanDappVariables(): BigInt {
     let result = super.call("loanDappVariables", []);
     return result[0].toBigInt();
+=======
+  DIVIDEND_PROOF(): i32 {
+    let result = super.call("DIVIDEND_PROOF", []);
+    return result[0].toI32();
+  }
+
+  MINT_PROOF(): i32 {
+    let result = super.call("MINT_PROOF", []);
+    return result[0].toI32();
+>>>>>>> 59f7f91... refactor: integration with our existing contracts
   }
 
   loanPayments(param0: BigInt, param1: BigInt): LoanDapp__loanPaymentsResult {
