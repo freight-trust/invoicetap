@@ -406,6 +406,7 @@ export class Loan extends SmartContract {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   lender(): Address {
     let result = super.call("lender", []);
     return result[0].toAddress();
@@ -419,6 +420,11 @@ export class Loan extends SmartContract {
     let result = super.call("DIVIDEND_PROOF", []);
     return result[0].toI32();
 >>>>>>> 59f7f91... refactor: integration with our existing contracts
+=======
+  DIVIDEND_PROOF(): i32 {
+    let result = super.call("DIVIDEND_PROOF", []);
+    return result[0].toI32();
+>>>>>>> master
   }
 
   loanVariables(): Loan__loanVariablesResult {

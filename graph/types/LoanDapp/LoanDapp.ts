@@ -273,6 +273,11 @@ export class LoanDapp extends SmartContract {
     return result[0].toI32();
   }
 
+  DIVIDEND_PROOF(): i32 {
+    let result = super.call("DIVIDEND_PROOF", []);
+    return result[0].toI32();
+  }
+
   MINT_PROOF(): i32 {
     let result = super.call("MINT_PROOF", []);
     return result[0].toI32();
